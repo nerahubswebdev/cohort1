@@ -1,0 +1,11 @@
+/* header container */
+.header-container {
+  width: 80%;
+  background-color: red !important;
+}
+
+.header-container h3 {
+}
+.stygri {
+  display: grid;
+}

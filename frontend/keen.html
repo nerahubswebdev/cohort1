@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Signup Form</title>
+    <link rel="stylesheet" href="./css/keen.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Welcome!</h1>
+      <p>Sign up to explore our courses and join our community.</p>
+      <form action="#">
+        <div class="input-field">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="input-field">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="input-field">
+          <label for="gender">Gender:</label>
+          <select name="gender" id="gender">
+            <option value="">choose gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Non-binary/Other</option>
+          </select>
+        </div>
+        <div class="checkbox-field">
+          <p>Choose your courses:</p>
+          <label for="web-dev">Web Development</label>
+          <input
+            type="checkbox"
+            id="web-dev"
+            name="courses[]"
+            value="web-dev"
+            m
+          />
+          <label for="data-science">Data Science</label>
+          <input
+            type="checkbox"
+            id="data-science"
+            name="courses[]"
+            value="data-science"
+          />
+          <label for="graphic-design">Graphic Design</label>
+          <input
+            type="checkbox"
+            id="graphic-design"
+            name="courses[]"
+            value="graphic-design"
+            onChange="{}"
+          />
+          <label for="digital-marketing">Digital Marketing</label>
+          <input
+            type="checkbox"
+            id="digital-marketing"
+            name="courses[]"
+            value="digital-marketing"
+          />
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <div style="position: absolute; top: 50%; color: white">
+        <p>miles</p>
+      </div>
+    </div>
+  </body>
+</html>

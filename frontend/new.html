@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .product-section {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: fit-content;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .product-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .product-image {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .product-details {
+        padding: 16px;
+      }
+
+      .product-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .product-price {
+        color: #007bff;
+        font-size: 14px;
+      }
+
+      .center-section {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+        /* background-color: #fff; */
+        /* border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 15px;
+      }
+
+      .write-up {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product-section">
+      <div class="product-grid">
+        <!-- Repeat the following product card block for each product -->
+        <div class="product-card">
+          <img src="product1.jpg" alt="Product 1" class="product-image" />
+          <div class="product-details">
+            <div class="product-title">Product 1</div>
+            <div class="product-price">$19.99</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="product1.jpg" alt="Product 1" class="product-image" />
+          <div class="product-details">
+            <div class="product-title">Product 1</div>
+            <div class="product-price">$19.99</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="product1.jpg" alt="Product 1" class="product-image" />
+          <div class="product-details">
+            <div class="product-title">Product 1</div>
+            <div class="product-price">$19.99</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="product1.jpg" alt="Product 1" class="product-image" />
+          <div class="product-details">
+            <div class="product-title">Product 1</div>
+            <div class="product-price">$19.99</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="product1.jpg" alt="Product 1" class="product-image" />
+          <div class="product-details">
+            <div class="product-title">Product 1</div>
+            <div class="product-price">$19.99</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="product1.jpg" alt="Product 1" class="product-image" />
+          <div class="product-details">
+            <div class="product-title">Product 1</div>
+            <div class="product-price">$19.99</div>
+          </div>
+        </div>
+
+        <!-- Repeat similar blocks for the remaining products -->
+      </div>
+    </div>
+
+    <div class="center-section">
+      <div class="title">Featured Product</div>
+      <div class="subtitle">Discover our amazing product</div>
+      <div class="write-up">
+        <p>
+          This is a description of our featured product. It's an incredible item
+          that offers amazing features and benefits. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Ipsum saepe nesciunt doloremque officiis est
+          recusandae culpa, exercitationem quaerat totam commodi tempore ratione
+          esse, fugiat fugit qui! Nostrum dolorum officia quis? Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Animi quas recusandae,
+          quaerat maiores magnam delectus, quia doloribus tempora iure nostrum
+          enim dolore, deleniti quo veniam repellendus ullam provident rerum
+          vitae. Eaque soluta velit incidunt exercitationem fugit odio, illo
+          nam. Ex nemo sed rerum velit odit nisi esse error eos similique
+          recusandae numquam veritatis placeat praesentium, aliquid ipsa optio
+          nihil! Mollitia. Cupiditate soluta rem tempore, autem accusantium vero
+          fugit, totam quos dolores repudiandae, velit aut aspernatur eum ullam
+          voluptate quae veritatis labore delectus quis illum. Doloremque harum
+          ipsum perspiciatis? Ad, perspiciatis. Officiis quibusdam, praesentium
+          commodi laudantium in rerum atque velit, earum nam sapiente ullam,
+          iure animi nemo aspernatur! Harum doloribus voluptas, soluta, ea
+          accusantium ipsam recusandae commodi maxime, debitis magnam ex.
+        </p>
+      </div>
+    </div>
+
+    <div class="product-section">
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="product1.jpg" alt="Product 1" class="product-image" />
+          <div class="product-details">
+            <div class="product-title">Product 1</div>
+            <div class="product-price">$19.99</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="product1.jpg" alt="Product 1" class="product-image" />
+          <div class="product-details">
+            <div class="product-title">Product 1</div>
+            <div class="product-price">$19.99</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="product1.jpg" alt="Product 1" class="product-image" />
+          <div class="product-details">
+            <div class="product-title">Product 1</div>
+            <div class="product-price">$19.99</div>
+          </div>
+        </div>
+        <!-- Repeat the following product card block for each product -->
+        <!-- ... (same as the first product section) -->
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      form {
+        max-width: 400px;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+
+      .form-group {
+        margin-bottom: 16px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+
+      input[type="checkbox"],
+      input[type="radio"] {
+        margin-right: 5px;
+      }
+
+      .checkbox-group {
+        display: flex;
+        align-items: center;
+      }
+
+      .checkbox-group label {
+        margin-bottom: 0;
+        margin-left: 8px;
+      }
+
+      .radio-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <p>How old are you?</p>
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: start;
+        "
+      >
+        <input type="radio" id="child" name="age" value="child" />
+        <label for="child">17 years or younger</label>
+      </div>
+
+      <input type="radio" id="adult" name="age" value="adult" />
+      <label for="adult">18 - 64 years</label><br />
+      <input type="radio" id="senior" name="age" value="senior" />
+      <label for="senior">65 years or older</label>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+
+      <div class="form-group">
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+          <option value="course1">Random Course 1</option>
+          <option value="course2">Random Course 2</option>
+          <option value="course3">Random Course 3</option>
+          <option value="course4">Random Course 4</option>
+          <option value="course5">Random Course 5</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
